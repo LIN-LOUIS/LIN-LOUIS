@@ -1,230 +1,227 @@
 
 <div align="center">
 
-# 你好，我是林致义 · Louis Lin 👋
+# Hi, I'm Louis Lin 👋
 
-### 多模态 AI · 医学 AI · 机器人视觉 · 具身智能 · AI Agent
+### Multimodal AI · Medical AI · Robotics · Embodied Intelligence · AI Agents
 
-**浙江财经大学 · 数据科学与大数据技术 本科在读**
+**Data Science Undergraduate @ Zhejiang University of Finance and Economics**
 
 📍 China &nbsp; | &nbsp; 📧 3165303925@qq.com
 
-[English](./README.md) · [GitHub](https://github.com/LIN-LOUIS)
+[中文版本](./README_CN.md) · [GitHub](https://github.com/LIN-LOUIS)
 
 </div>
 
 ---
 
-## 👨‍💻 关于我
+## 👨‍💻 About Me
 
-目前就读于**浙江财经大学数据科学与大数据技术专业**，研究和项目方向主要集中在人工智能与机器人交叉领域。
+I'm an undergraduate student majoring in **Data Science and Big Data Technology** at Zhejiang University of Finance and Economics.
 
-目前重点关注：
+My current interests lie at the intersection of **multimodal learning, medical AI, robot perception, embodied intelligence and LLM agents**.
 
-- 🧠 **多模态学习与大模型**
-- 🏥 **医学人工智能与医学图像分析**
-- 🤖 **机器人感知与具身智能**
-- 👁️ **计算机视觉**
-- 🛠️ **LLM Agent 与 AI 工程**
+- 🔬 Conducting research on **multimodal skin disease diagnosis**
+- 🎓 Research guided by **Prof. Changmiao Wang, CUHK-Shenzhen**
+- 🤖 Experience in **RoboMaster robot vision and auto-aiming**
+- 🏥 Experience in **medical AI / computer vision projects**
+- 🧠 Familiar with **embodied intelligence, VLA and robotics industry research**
+- 🛠️ Exploring **RAG, LLM Agents and AI engineering**
 
-目前在**香港中文大学（深圳）王昌淼教授**指导下开展多模态皮肤病智能诊断相关研究。
-
-同时具备 **RoboMaster 机器人视觉、医学 AI 项目以及具身智能行业研究**经历。
-
-> 🎯 目前关注的实习方向：  
-> **多模态大模型 / 大模型算法 / 机器人算法 / 具身智能 / VLA / Agent 开发**
+> 🎯 Currently interested in internship opportunities in  
+> **Multimodal AI / LLM / Robotics / Embodied AI / Agent Development**
 
 ---
 
-## 🔬 研究方向
+## 🔬 Research Interests
 
-- **多模态 AI：** Vision-Language Learning、对比学习、图文检索
-- **医学 AI：** 皮肤疾病分类、医学图像分析、模型评测
-- **计算机视觉：** 目标检测、传统视觉、位姿估计
-- **机器人：** 机器人视觉、ROS2、视觉控制、具身智能
-- **LLM / Agent：** RAG、知识检索、Agent Workflow、多模态 Agent
+- **Multimodal AI:** Vision-Language Learning, Contrastive Learning, Image-Text Retrieval
+- **Medical AI:** Skin Disease Classification, Medical Image Analysis, Model Evaluation
+- **Computer Vision:** Object Detection, Traditional CV, Pose Estimation
+- **Robotics:** Robot Perception, ROS2, Vision-Based Control, Embodied Intelligence
+- **LLM & Agents:** RAG, Knowledge Retrieval, Agent Workflow, Multimodal Agents
 
 ---
 
-# 🚀 核心项目
+# 🚀 Featured Projects
 
-## 🩺 多模态皮肤病智能诊断
+## 🩺 Multimodal Skin Disease Diagnosis
 
-**项目负责人 / 核心算法开发**  
-**指导教师：香港中文大学（深圳）王昌淼教授**
+**Project Lead · Core Algorithm Developer**  
+**Advisor: Prof. Changmiao Wang, CUHK-Shenzhen**
 
-围绕皮肤病识别、多模态知识对齐、跨数据集泛化及模型可解释性开展医学多模态 AI 研究。
+Research on multimodal medical AI for skin disease recognition, multimodal knowledge alignment and model generalization.
 
-### 项目数据
+### Highlights
 
-- 👥 负责 **2 人科研团队**
-- 💻 承担项目**全部核心算法代码开发**
-- 🗂️ 处理 **15,849 条 SkinCon 样本**
-- 📊 搭建 **3 类模型评测任务**
+- 👥 Led a **2-person research team**
+- 💻 Responsible for **all core algorithm implementation**
+- 🗂️ Processed **15,849 SkinCon samples**
+- 📊 Built **3 evaluation tasks**
   - Zero-shot Classification
   - Multi-label Classification
   - Image-Text Retrieval
-- 🧪 在 **5 类医学数据集**开展实验
+- 🧪 Conducted experiments across **5 medical datasets**
   - SkinCon
   - HAM10000
   - ISIC
   - PAD-UFES-20
   - Derm7pt
-- 📈 SkinCon 整体 **AUROC 达 0.797**
-- 🔍 开展 Ablation Study 与 Bad Case Analysis
-- 🧠 复现并实现 **HCE、CGBR** 等模块
-- 🔗 探索对比学习在医学图像—文本语义对齐中的应用
+- 📈 Achieved **0.797 AUROC on SkinCon**
+- 🔍 Conducted **Ablation Study and Bad Case Analysis**
+- 🧠 Reproduced and implemented **HCE** and **CGBR** modules
+- 🔗 Explored contrastive learning for medical image-text alignment
 
-### 模型流程
-
-```text
-医学图像 / Metadata / Text
-             │
-             ▼
-          数据预处理
-             │
-             ▼
-        分层特征提取
-             │
-             ▼
-        概念关系推理
-             │
-             ▼
-       图像-文本语义对齐
-             │
-             ▼
-        多模态特征表示
-             │
-      ┌──────┼──────┐
-      ▼      ▼      ▼
- Zero-shot 多标签分类 图文检索
-```
-
-### 技术栈
-
-`Python` `PyTorch` `Medical AI` `Multimodal Learning`  
-`Contrastive Learning` `Computer Vision` `Model Evaluation`
-
-🔗 [Skin Cancer 项目仓库](https://github.com/LIN-LOUIS/Skin-cancer)
-
-> 🚧 项目仍在持续完善，目前逐步整理训练、评测与实验代码。
-
----
-
-## 🤖 RoboMaster 机器人视觉
-
-**杭州电子科技大学 PHOENIX 战队 · 视觉组顾问**
-
-围绕 RoboMaster 装甲板识别、视觉定位和机器人自瞄开展计算机视觉与机器人算法实践。
-
-### 核心工作
-
-- 🎯 参与 **RoboMaster 装甲板识别**
-- 🧠 结合 **YOLOv5 + OpenCV 传统视觉**
-- 👁️ 使用**工业相机**进行真实场景图像采集
-- 💻 使用 **C++ / OpenCV** 开发视觉处理模块
-- 🔍 完成灯条识别并提取 **6 个关键角点**
-- 📐 基于 **PnP** 完成目标位姿及距离估计
-- 🐧 在 **Linux** 环境完成算法开发与调试
-- 🤖 了解机器人从视觉感知到控制输入的完整链路
-
-### 视觉处理链路
+### Research Pipeline
 
 ```text
-工业相机
-   │
-   ▼
- YOLOv5
-候选目标检测
-   │
-   ▼
-OpenCV 精处理
-   │
-   ├── Gaussian Blur
-   ├── Canny
-   ├── Morphology
-   ├── Contour Detection
-   └── Polygon Approximation
-   │
-   ▼
-灯条 / 装甲板识别
-   │
-   ▼
-关键点提取
-   │
-   ▼
-  PnP
-   │
-   ▼
-三维位姿估计
-   │
-   ▼
-机器人控制输入
+Medical Image / Metadata / Text
+              │
+              ▼
+       Data Preprocessing
+              │
+              ▼
+  Hierarchical Feature Extraction
+              │
+              ▼
+     Concept Graph Reasoning
+              │
+              ▼
+   Image-Text Semantic Alignment
+              │
+              ▼
+    Multimodal Representation
+              │
+       ┌──────┼──────┐
+       ▼      ▼      ▼
+  Zero-shot Multi-label Retrieval
 ```
 
-### 计算机视觉实践
+### Tech Stack
 
-- 透视变换
-- 图像降噪
-- 边缘检测
-- 形态学处理
-- 轮廓检测
-- 灯条识别
-- PyTorch CNN 模型训练
+`Python` `PyTorch` `Multimodal Learning` `Medical AI`  
+`Contrastive Learning` `Model Evaluation` `Computer Vision`
 
-🔗 [PHOENIX 视觉组训练仓库](https://github.com/LIN-LOUIS/Assetment_winter_2025)
+🔗 [Skin Cancer Repository](https://github.com/LIN-LOUIS/Skin-cancer)
+
+> 🚧 The repository is under active development. More training and evaluation code will be added progressively.
 
 ---
 
-# 💼 实习经历
+## 🤖 RoboMaster Robot Vision
 
-## 🤖 具身智能 / AI 猎头实习生
+**Vision Group Advisor · HDU PHOENIX RoboMaster Team**
 
-**上海脉图 · 2026.07 – 至今**
+Worked on robot vision for armor detection, visual localization and auto-aiming.
 
-聚焦**具身智能、人形机器人与智能硬件**赛道的人才研究及公司 Mapping。
+### Highlights
 
-- 🏢 累计 Mapping **50+ 家具身智能 / 机器人公司**
-- 🔬 完成 **16 家企业深度 Mapping**
-- 📄 筛选 **500+ 份技术人才简历**
-- 📞 累计触达 **200+ 名候选人**
-- 💬 完成 **60+ 次深度候选人沟通**
-- 📤 完成 **30+ 名候选人推荐**
-- 🎯 推动 **10+ 名候选人进入客户面试**
-- ✅ 推动 **1 名 VLA 算法候选人完成 Offer 转化**
+- 🎯 Worked on **RoboMaster armor plate recognition**
+- 🧠 Combined **YOLOv5 + traditional computer vision**
+- 👁️ Used an **industrial camera** for real-world image acquisition
+- 💻 Developed vision modules using **C++ / OpenCV**
+- 🔍 Implemented light-strip recognition and extracted **6 key points**
+- 📐 Applied **PnP** for target pose and distance estimation
+- 🐧 Developed and tested algorithms under **Linux**
+- 🤖 Gained experience in the perception-to-control pipeline
 
-覆盖 **8+ 类核心岗位**：
+### Vision Pipeline
 
-`VLA` · `机器人算法` · `计算机视觉` · `硬件研发`  
-`电机控制` · `质量` · `供应链` · `市场`
+```text
+Industrial Camera
+        │
+        ▼
+     YOLOv5
+ Candidate Detection
+        │
+        ▼
+  OpenCV Processing
+        │
+        ├── Gaussian Blur
+        ├── Canny
+        ├── Morphology
+        ├── Contour Detection
+        └── Polygon Approximation
+        │
+        ▼
+ Light Bar / Armor Detection
+        │
+        ▼
+ Keypoint Extraction
+        │
+        ▼
+       PnP
+        │
+        ▼
+ 3D Pose Estimation
+        │
+        ▼
+ Robot Control Input
+```
 
-通过实习建立了对以下方向的系统理解：
+### Computer Vision Practice
 
-- 具身智能公司与技术路线
-- VLA / 机器人算法人才画像
-- 机器人研发团队组织结构
-- 算法与硬件团队分工
-- 技术岗位能力评估
-- 公司技术路线与组织 Mapping
+- Perspective Transformation
+- Image Denoising
+- Edge Detection
+- Morphological Processing
+- Contour Detection
+- Light Strip Recognition
+- CNN Training with PyTorch
+
+🔗 [PHOENIX Vision Training Repository](https://github.com/LIN-LOUIS/Assetment_winter_2025)
 
 ---
 
-## 🏥 医学 AI 项目实习生
+# 💼 Experience
 
-**深圳市大数据研究院 · 2024.07 – 2024.09**
+## 🤖 Embodied Intelligence / AI Headhunting Intern
 
-参与医学 AI / CV 方向项目的数据处理与模型评测工作。
+**Shanghai Maitu · Jul 2026 – Oct 2026
 
-- 使用 **Python 编写批量数据处理脚本**
-- 完成医学数据清洗与标准化
-- 检查异常样本和标签问题
-- 参与模型测试与指标整理
-- 分析模型预测结果
-- 整理 Bad Case 与实验记录
+Focused on talent research and company mapping across the **Embodied AI, Robotics and Intelligent Hardware** industries.
+
+- 🏢 Mapped **50+ robotics / embodied intelligence companies**
+- 🔬 Completed **16 in-depth company mappings**
+- 📄 Screened **500+ technical resumes**
+- 📞 Reached **200+ candidates**
+- 💬 Conducted **60+ in-depth candidate interviews**
+- 📤 Recommended **30+ candidates**
+- 🎯 Helped **10+ candidates enter client interview processes**
+- ✅ Supported **1 VLA algorithm candidate through the Offer stage**
+
+Covered **8+ job families**, including:
+
+`VLA` · `Robot Algorithms` · `Computer Vision` · `Hardware`  
+`Motor Control` · `Quality` · `Supply Chain` · `Marketing`
+
+This experience helped me build a structured understanding of:
+
+- Embodied intelligence company landscapes
+- VLA / robotics talent profiles
+- Robotics R&D organizations
+- Algorithm and hardware team structures
+- Technology roadmap research
+- Technical talent evaluation
 
 ---
 
-# 🛠️ 技术栈
+## 🏥 Medical AI Intern
+
+**Shenzhen Institute of Big Data · Jul 2024 – Sep 2024**
+
+Participated in medical AI and computer vision projects.
+
+- Developed **Python scripts** for batch medical-data processing
+- Performed data cleaning and standardization
+- Checked abnormal samples and labels
+- Assisted with model testing and evaluation
+- Conducted prediction-result analysis
+- Organized Bad Cases and experiment records
+
+---
+
+# 🛠️ Tech Stack
 
 ### AI / Deep Learning
 
@@ -242,7 +239,7 @@ OpenCV 精处理
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
 
-`PnP` `TCP/UDP` `CAN` `串口通信` `Shell`
+`PnP` `TCP/UDP` `CAN` `Serial Communication` `Shell`
 
 ### LLM / Agent
 
@@ -269,36 +266,33 @@ OpenCV 精处理
 
 ---
 
-# 🧭 目前正在做
+# 🧭 Currently Exploring
 
-- 🔬 多模态医学 AI
-- 🩺 皮肤癌 / 皮肤病智能诊断
+- 🔬 Multimodal Medical AI
 - 🧠 Vision-Language Models
-- 🤖 机器人感知
-- 🦾 具身智能与 VLA
-- 🛠️ LLM Agent / RAG
-- ⚙️ PyTorch / C++ / ROS2 工程能力提升
+- 🤖 Robot Perception
+- 🦾 Embodied Intelligence & VLA
+- 🛠️ LLM Agents & RAG
+- ⚙️ PyTorch / C++ / ROS2 Engineering
 
 ---
 
-# 🎯 关注的机会
+# 🎯 Opportunities
 
-目前关注以下实习 / 科研方向：
+I'm interested in internship and research opportunities related to:
 
-**多模态大模型 · LLM · 医学 AI · CV · 机器人算法 · 具身智能 · VLA · AI Agent**
+**Multimodal AI · Large Language Models · Medical AI · Computer Vision · Robotics · Embodied Intelligence · VLA · AI Agents**
 
-尤其希望参与：
+I am particularly interested in projects combining:
 
-> **AI Research × 真实工程落地 × Robotics**
-
-相关项目。
+> **AI Research × Real-world Engineering × Robotics**
 
 ---
 
-# 📫 联系方式
+# 📫 Contact
 
-- 📧 **Email：** 3165303925@qq.com
-- 💻 **GitHub：** [@LIN-LOUIS](https://github.com/LIN-LOUIS)
+- 📧 **Email:** 3165303925@qq.com
+- 💻 **GitHub:** [@LIN-LOUIS](https://github.com/LIN-LOUIS)
 
 ---
 
@@ -308,7 +302,7 @@ OpenCV 精处理
 
 **Research · Build · Iterate**
 
-[English Version](./README.md)
+[中文版本](./README_CN.md)
 
 </div>
 ````
