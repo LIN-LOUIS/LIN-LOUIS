@@ -9,7 +9,7 @@
 
 📍 China &nbsp; | &nbsp; 📧 3165303925@qq.com
 
-[English](./README.md) · [GitHub](https://github.com/LIN-LOUIS)
+[English](./README_CN.md) · [GitHub](https://github.com/LIN-LOUIS)
 
 </div>
 
