@@ -172,7 +172,7 @@ OpenCV 精处理
 - 灯条识别
 - PyTorch CNN 模型训练
 
-🔗 [PHOENIX 视觉组训练仓库](https://github.com/LIN-LOUIS/Assetment_winter_2025)
+🔗 [PHOENIX 视觉组训练仓库](https://github.com/LIN-LOUIS/hdu_rm_ArmorNet.git)
 
 ---
 
